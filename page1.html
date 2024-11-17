@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link rel="stylesheet" href="a1.css" >
+    <link rel="stylesheet" href="a1.sass" >
+</head>
+<body>
+
+    <header>
+        <h1>Simply Four</h1>
+    </header> 
+
+    <nav>
+        <a href="page1.html">Main page</a>
+        <a href="page2.html">Menu</a>
+        <a href="page3.html">Job Application</a>
+        <a href="page4.html">About us</a>
+    </nav> 
+    
+    <main>
+        <section>
+            <canvas id="myCanvas" width="180" height="85" style="border:4px solid #000000;"></canvas>
+            <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.font = "30px verdana";
+            ctx.fillText("WELCOME.", 10, 50);
+            </script>
+        </section> 
+
+        <section> <!-- for paragraphs used chat to make text -->
+            <p>Welcome to Simply Four, where less is more. Our menu is simple yet exquisite, offering just 
+                four carefully crafted dishes that highlight the very best ingredients. Every item is prepared 
+                with precision and passion, ensuring a memorable dining experience. At Simply Four, we believe 
+                in quality over quantity—each dish is a celebration of flavor, freshness, and creativity. Come enjoy the art of simplicity.</p>
+        </section> 
+
+        <article>
+            <h6 style="text-align: center;">Outside of Simply Four</h6>
+            <img src="photo1.png" alt="Outside of Simply Four" width="320" height="240">
+        </article>  
+<br><br>
+        <section>   <!-- for paragraphs used chat to make text -->
+            <p>Simply Four is a unique dining experience where simplicity meets flavor, offering just four carefully crafted dishes.
+                At Simply Four, we believe in doing fewer things, but doing them exceptionally well.
+                The menu at Simply Four focuses on quality, with only four dishes that change the way you think about food.
+                Each dish at Simply Four is thoughtfully prepared, using the freshest ingredients and perfected with every serving.
+                Simply Four invites you to enjoy a dining experience where every bite counts, with a limited yet refined selection.
+                Why complicate things? At Simply Four, we focus on just four signature dishes, made to perfection every time.
+                At Simply Four, our minimalist approach lets us concentrate on creating an unforgettable meal with fewer options but more impact.
+                The concept of Simply Four is to strip away the excess and deliver only the finest dishes, expertly curated for your enjoyment.
+                With a menu that offers just four dishes, Simply Four is redefining the art of dining with simplicity and elegance.
+                Whether you're a first-time visitor or a regular, Simply Four guarantees a memorable meal with its limited but delicious menu.</p> 
+        </section>
+   
+        <article> 
+            <h6 style="text-align: center;">Inside of Simply Four</h6>
+            <img src="photo2.png" alt="Inside of Simply Four" width="370" height="290">
+        </article> 
+    
+<br>
+
+        <section>   
+            <p>We have available jobs in our fine establishment, so if you want to apply, you can file a form by clicking on job application in navigation.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Foundations of Web Development - Asad Dragolovcanin</p>
+    </footer>
+</body>
+</html>

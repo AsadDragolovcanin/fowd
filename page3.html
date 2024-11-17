@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <link rel="stylesheet" href="a1.css" >
+    <link rel="stylesheet" href="a1.sass">
+</head>
+<body>
+    <header>
+        <h1>Simply Four</h1>
+    </header>
+
+    <nav>
+        <a href="page1.html">Main page</a>
+        <a href="page2.html">Menu</a>
+        <a href="page3.html">Job Application</a>
+        <a href="page4.html">About us</a>
+    </nav>
+    
+    <main>
+        <section>
+            <h2>Job apllication</h2>
+             
+            <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" value="" size="30" required>
+            
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" value="" size="30" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="" size="30" required>
+        
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" value="" size="30" required>
+        
+                <label for="date">Date of birth:</label>
+                <input type="date" id="date" name="date"  required>
+        
+                <label for="city">City of birth:</label>
+                <input type="text" name="city" id="city"  value="" size="30" required>
+        
+                <label for="country">Country of birth:</label>
+                <input type="text" name="country" id="country" value="" size="30" required>
+        
+                <label for="reviousjob">Previous job:</label>
+                <input type="text" name="previousjob" id="reviousjob"  value="" size="30" required>
+        
+                <label for="quality">Best quality:</label>
+                <input type="text" id="quality" name="quality" value="" size="30" required>
+                
+                <label for="jobchoice">Choose a job to apply for:</label>
+                <input list="jobs" id="jobchoice" name="jobchoice" required/>
+                <datalist id="jobs">
+                    <option value="Cleaner"></option>
+                    <option value="Barista"></option>
+                    <option value="Chef"></option>
+                    <option value="Server"></option>
+                    <option value="Cashier"></option>
+                </datalist>              
+                <input type="hidden" name="numberofjobaplications" value="1">
+                <button type="submit">Submit application</button>
+            </form> 
+        </section>
+   </main>
+   
+    <footer>
+        <p>Foundations of Web Development - Asad Dragolovcanin</p>
+    </footer>
+</body>
+</html>
